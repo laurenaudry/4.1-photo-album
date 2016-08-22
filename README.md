@@ -1,17 +1,17 @@
 ## Photo Album summer-16
 
 ### to do list
-- [] Don't forget to use NPM to manage jQuery
+- [x] Don't forget to use NPM to manage jQuery
 - [] make gallery
  - [] match wire frame
- - [] have at least 3 photos
- - [] 1 album
-- [] add photos
+ - [x] have at least 3 photos
+ - [x] 1 album
+- [x] add photos
 - [] style to match comp design
  - [] position in right places
- - [] titles on bottom for album name
+ - [x] titles on bottom for album name
 - [] interaction
- - [] click to open album modul
+ - [] click to open album modal
  - [] display picture
  - [] click for next picture
 
