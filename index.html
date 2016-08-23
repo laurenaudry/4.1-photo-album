@@ -6,79 +6,17 @@
     <link rel="stylesheet" href="stylesheets/main.css">
   </head>
   <body class="body">
-    <!-- each picture in the album is seperated into its own div -->
-    <div class="modal-late modal-hideLate"
-         data-js="modal-late">
-      <div class="modal-container">
-        <h2 class="photo-caption">
-          Late for School
-        </h2 >
-        <button class="back_button"
-                data-js="back_button"
-                type="button"
-                name="button">
-                Return to Album
-        </button>
-        <img class="album-image"
-             data-js="late_image"
-             src="assets/late.jpeg"
-             alt="bird with human arms looking at watch"/>
-      </div>
-    </div>
-    <div class="modal-tea modal-hideTea"
-         data-js="modal-tea">
-      <div class="modal-container">
-        <h2 class="photo-caption">
-          Throwing Subtle Shade
-        </h2 >
-        <button class="back_button"
-                data-js="back_button"
-                type="button"
-                name="button">
-                Return to Album
-        </button>
-        <img class="album-image"
-             data-js="tea_image"
-             src="assets/tea.jpeg"
-             alt="bird with human arms sipping tea"/>
-      </div>
-    </div>
-    <div class="modal-gladiator modal-hideGladiator"
-         data-js="modal-gladiator">
-      <div class="modal-container">
-        <h2 class="photo-caption">
-          Gladiator Chicken
-        </h2 >
-        <button class="back_button"
-                data-js="back_button"
-                type="button"
-                name="button">
-                Return to Album
-        </button>
-        <img class="album-image"
-             data-js="gladiator_image"
-             src="assets/gladiator.jpeg"
-             alt="bird with muscular human arms holding a sword"/>
-      </div>
-    </div>
-    <button data-js="myBtn "class="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-  <div class="myModal" data-js="modal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close" data-js="close">x</span>
-    <img src="assets/unicorns.jpg" alt="unicorns" />
+    <div class="albumBox">
+    <a class='album' href='assets/tea.jpeg'>
+      Subtle Shde Throwing.
+    </a>
+    <a class='album' href='assets/late.jpeg'>
+      Late for Work
+    </a>
+    <a class='album' href='assets/gladiator.jpeg'>
+      Gladiator Chicken
+    </a>
   </div>
-
-</div>
-  <main class="main">
-    <!-- album title is at bottom to match comp once pictures are stacked. -->
-  <h1 class="albumTitle">
-    Album One
-  </h1>
-</main>
   <!-- script source on bottom of body for faster loading time  -->
   <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
   <script src="javascripts/main.js" charset="utf-8"></script>
