@@ -1,19 +1,5 @@
 $(function() {
 
-  var albumOne = [
-   {
-     title: "Late",
-     src: "assets/late.jpeg"
-   },
-   {
-     title: "Tea",
-     src: "assets/tea.jpeg"
-   },
-   {
-     title: "Gladiator",
-     src: "assets/gladiator.jpeg"
-   }
- ]
 
   var $photoList = $("[data-js='photo_list']");
   var $lateElement = $("[data-js='modal-late']");
@@ -21,39 +7,22 @@ $(function() {
   var $gladiatorElement =  $("[data-js='modal-gladiator']");
   var $backButton = $("[data-js='back_button']");
 
-  albumOne.forEach(function(image){
-     var imageContainer = $(`<li class= 'image-container'>${image.title}</li>`);
 
-     var newImage = $("<img class='image'>").attr("src",image.src);
+var modal = document.getElementsByClassName('modal')
+var $btn = $("[data-js='myBtn']");
+var $span = $("[data-js='close']")[0];
 
-     imageContainer.append(newImage);
+$btn.onclick = function() {
+    modal.style.display = "block";
+}
 
-     $photoList.append(imageContainer);
-  });
-
-  $photoList.on("click", "li:first-child", function(){
-    $lateElement.show("modal-hideLate")
-  })
-
-  $photoList.on("click", "li:nth-child(2)", function(){
-    $teaElement.show("modal-hideTea")
-  })
-
-  $photoList.on("click", "li:nth-child(3)", function(){
-    $gladiatorElement.show("modal-hideGladiator")
-  })
-
-  $backButton.on("click", function(){
-    $lateElement.show("modal-hideLate")
-  })
-
-  $backButton.on("click", function(){
-    $teaElement.hide("modal-hideTea")
-  })
-
-  $backButton.on("click", function(){
-    $gladiatorElement.hide("modal-hideGladiator")
-  })
-
+$span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 });
