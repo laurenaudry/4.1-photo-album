@@ -5,49 +5,72 @@
     <title>Photo Album assignment</title>
     <link rel="stylesheet" href="stylesheets/main.css">
   </head>
-  <body>
-    <div class="modal-1 modal-hide1"
-         data-js="modal-1">
+  <body class="body">
+    <!-- each picture in the album is seperated into its own div -->
+    <div class="modal-late modal-hideLate"
+         data-js="modal-late">
       <div class="modal-container">
-        <h1>Coffee</h1>
-        <button data-js="back_button"
+        <h2 class="photo-caption">
+          Late for School
+        </h2 >
+        <button class="back_button"
+                data-js="back_button"
                 type="button"
-                name="button"> Return to Album
+                name="button">
+                Return to Album
         </button>
-        <img data-js="cafe_image"
-             src="assets/cafe.jpeg"
-             alt="person sitting on stairs with coffee and pastry"/>
+        <img class="album-image"
+             data-js="late_image"
+             src="assets/late.jpeg"
+             alt="bird with human arms looking at watch"/>
       </div>
     </div>
-    <div class="modal-2 modal-hide2"
-         data-js="modal-2">
+    <div class="modal-tea modal-hideTea"
+         data-js="modal-tea">
       <div class="modal-container">
-        <h1>Glasses</h1>
-        <button data-js="back_button"
+        <h2 class="photo-caption">
+          Throwing Subtle Shade
+        </h2 >
+        <button class="back_button"
+                data-js="back_button"
                 type="button"
-                name="button"> Return to Album
+                name="button">
+                Return to Album
         </button>
-        <img data-js="glasses_image"
-             src="assets/glasses.jpeg"
-             alt="glasses magnifying book text in Russian"/>
+        <img class="album-image"
+             data-js="tea_image"
+             src="assets/tea.jpeg"
+             alt="bird with human arms sipping tea"/>
       </div>
     </div>
-    <div class="modal-3 modal-hide3"
-         data-js="modal-3">
+    <div class="modal-gladiator modal-hideGladiator"
+         data-js="modal-gladiator">
       <div class="modal-container">
-        <h1>Hands</h1>
-        <button data-js="back_button"
+        <h2 class="photo-caption">
+          Gladiator Chicken
+        </h2 >
+        <button class="back_button"
+                data-js="back_button"
                 type="button"
-                name="button"> Return to Album
+                name="button">
+                Return to Album
         </button>
-        <img data-js="hands_image"
-             src="assets/hands.jpeg"
-             alt="hands blocking face"/>
+        <img class="album-image"
+             data-js="gladiator_image"
+             src="assets/gladiator.jpeg"
+             alt="bird with muscular human arms holding a sword"/>
       </div>
     </div>
-  <h1>
+  <main class="main">
+    <!-- album title is at bottom to match comp once pictures are stacked. -->
+  <h1 class="albumTitle">
     Album One
   </h1>
+  <ul data-js"photo_list"
+      class="photo_list">
+  </ul>
+</main>
+  <!-- script source on bottom of body for faster loading time  -->
   <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
   <script src="javascripts/main.js" charset="utf-8"></script>
   </body>
