@@ -2,23 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Photo Album assignment</title>
     <link rel="stylesheet" href="stylesheets/main.css">
+    <title>4.1 Photo Album</title>
   </head>
-  <body class="body">
-    <div class="albumBox">
-    <a class='album' href='assets/tea.jpeg'>
-      Subtle Shde Throwing.
-    </a>
-    <a class='album' href='assets/late.jpeg'>
-      Late for Work
-    </a>
-    <a class='album' href='assets/gladiator.jpeg'>
-      Gladiator Chicken
-    </a>
-  </div>
-  <!-- script source on bottom of body for faster loading time  -->
-  <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
-  <script src="javascripts/main.js" charset="utf-8"></script>
+  <body>
+    <h1 class="title"
+     data-js="title">
+   My Albums
+ </h1>
+ <section class="container"
+          data-js="container">
+   <figure class="img-container"
+           data-js="img-container">
+     <img src="assets/late.jpeg"
+          alt="bird with human arms looking at watch"
+          class="image"
+          data-js="image"/>
+     <p class="imgTitle"
+        data-js="imgTitle">
+       Late for class
+     </p>
+   </figure>
+   <figure class="img-container"
+           data-js="img-container">
+     <img src="assets/tea.jpeg"
+          alt="bird with human arms drinking tea"
+          class="image"
+          data-js="image"/>
+     <p class="imgTitle"
+        data-js="imgTitle">
+       None of my business
+     </p>
+   </figure>
+   <figure class="img-container"
+           data-js="img-container">
+     <img src="assets/gladiator.jpeg"
+          alt="chicken with human arms holding sword"
+          class="image"
+          data-js="image"/>
+     <p class="imgTitle"
+        data-js="imgTitle">
+       SPARTAAAAA
+     </p>
+   </figure>
+   <figure class="img-container"
+           data-js="img-container">
+     <img src="assets/idk.jpeg"
+          alt="bird with human arms shrugging"
+          class="image"
+          data-js="image"/>
+     <p class="imgTitle"
+        data-js="imgTitle">
+       Still feel lost...
+     </p>
+   </figure>
+ </section>
+
+ <div class="modal"
+      data-js="modal">
+   <div class="modal__content">
+     <img src=""
+          alt=""
+          class="modal__image"
+          data-js="modal__image"/>
+   </div>
+   <button type="button"
+           name="Return to albums"
+           class="close-modal"
+           data-js="close-modal">
+     Return to albums
+   </button>
+
+ </div>
+   <script src="node_modules/jquery/dist/jquery.js">
+   </script>
+   <script src="javascripts/main.js"
+           charset="utf-8">
+   </script>
   </body>
 </html>

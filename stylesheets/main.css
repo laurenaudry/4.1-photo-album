@@ -2,6 +2,104 @@
   box-sizing: border-box;
 }
 
-.albumBox {
-  
+
+.title {
+  color: rgb(144, 158, 178);
+  font-family: Helvetica, sans-serif;
+  font-size: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  height:100%;
+  margin: 5% 11% 10% 11%;
+  position: relative;
+  width: 78%;
+}
+
+.img-container {
+  box-shadow: 0 2px 4px 2px rgb(200, 200, 200);
+  display: inline-block;
+  font-size: 0;
+  max-height: 20%;
+  margin-top: 10px;
+  position: relative;
+  vertical-align: top;
+  width: 33%;
+}
+
+.image {
+  height: 300px;
+  width: 300px;
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  -webkit-transition: all .6s;
+}
+
+.image:hover {
+  box-shadow: inset 3px 4px 5px rgb(252, 98, 93);
+  cursor: pointer;
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all .6s;
+}
+
+.imgTitle {
+  background-color: rgb(220, 220, 220);
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;;
+  height: 33%;
+  margin: 0;
+  padding: 5%;
+  width: 300px;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.modal__visible {
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: visible;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  right: 0%;
+  text-align: center;
+  top: 0%;
+  transition: visibility .3s, opacity 0.3s linear;
+  width: 100%;
+}
+
+.modal__content {
+  height: 80%;
+  margin: .8% 10%;
+  text-align: center;
+  width: 80%;
+
+}
+
+.modal__image {
+  border: 3px solid black;
+  height: auto;
+  width: 100%;
+}
+
+.close-modal {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 8px;
+  transition: border .6s;
+}
+
+.modal__exit:hover{
+  cursor: pointer;
+  transition: border .6s;
 }
